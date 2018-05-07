@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="spinnerItems">
+        <item>man</item>
+        <item>woman</item>
+
+    </string-array>
+</resources>

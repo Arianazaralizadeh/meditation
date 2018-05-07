@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context="com.example.aria_nazaralizadeh.meditation.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_back_2"></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/back"
+        >
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/img_icon_search"/>
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/img_icon_menu"/>
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_back_2"
+        android:layout_below="@id/action_bar"
+        android:layout_above="@id/bottomNavigationView"></FrameLayout>
+
+
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/tab"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/back"-->
+        <!--app:tabTextColor="#ffffff"-->
+        <!--android:layout_below="@id/action_bar"-->
+        <!--app:tabSelectedTextColor="@color/blue"-->
+        <!--app:tabIndicatorColor="@color/blue"-->
+        <!--android:layerType="software"></android.support.design.widget.TabLayout>-->
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/view_pajer"-->
+        <!--android:layout_above="@id/bottomNavigationView"-->
+        <!--android:layout_below="@id/tab"-->
+        <!--&gt;</android.support.v4.view.ViewPager>-->
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/back"
+        app:itemIconTint="@color/sefid"
+        app:itemTextColor="@color/sefid"
+        android:pointerIcon="context_menu"
+        android:touchscreenBlocksFocus="true"
+        app:menu="@menu/bottom_navigation_menu"/>
+
+</RelativeLayout>

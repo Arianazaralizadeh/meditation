@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context="com.example.aria_nazaralizadeh.meditation.RegisterActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_back_1"></RelativeLayout>
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <LinearLayout
+              android:layout_centerInParent="true"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:id="@+id/linearLayout">
+
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp">
+                  <ImageView
+                      android:id="@+id/logo"
+                      android:layout_width="100dp"
+                      android:layout_height="100dp"
+                      android:src="@drawable/logo_lutos"
+                      android:transitionName="LogoTransition"
+                      android:layout_centerHorizontal="true"/>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/logo"
+                      android:transitionName="TextTransition"
+                      android:layout_centerHorizontal="true"
+                      android:layout_marginTop="10dp"
+                      android:textColor="@color/sefid"
+                      android:text="lotus"
+                      android:textStyle="italic"
+                      android:textSize="18sp"
+                      android:id="@+id/textView" />
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:layout_marginTop="100dp">
+                  <LinearLayout
+                      android:id="@+id/a1"
+                      android:layout_width="300dp"
+                      android:layout_height="45dp"
+                      android:background="@color/shishe"
+                      android:orientation="horizontal"
+                      android:layout_centerHorizontal="true">
+
+
+                      <ImageView
+                          android:layout_width="40dp"
+                          android:layout_height="40dp"
+                          android:padding="8dp"
+                          android:src="@drawable/img_phone"
+                          />
+
+                      <EditText
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_marginLeft="5dp"
+                          android:backgroundTint="@color/shishe"
+                          android:hint="شماره همراه   "
+                          android:inputType="phone"
+                          android:clickable="false"
+                          android:focusable="false"
+                          android:textColor="@color/sefid"
+                          android:textColorHint="#b6ffffff" />
+                  </LinearLayout>
+
+
+
+                  <Button
+                      android:id="@+id/RegisterActivity_button_start"
+                      android:layout_width="300dp"
+                      android:layout_height="45dp"
+                      android:layout_centerHorizontal="true"
+                      android:layout_marginTop="10dp"
+                      android:layout_below="@id/a1"
+                      android:background="@color/blue"
+                      android:text="شروع"
+                      android:textColor="#fff"
+                      android:textStyle="normal"
+                      android:textSize="15sp"/>
+
+              </RelativeLayout>
+
+
+
+          </LinearLayout>
+
+
+      </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <View
+            android:id="@+id/ActivityRegister_View_Keyboard"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

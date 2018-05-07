@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/MainActivity_buttom_meditate"
+        android:title="تفکر"
+        android:iconTint="@color/sefid"
+        android:icon="@drawable/meditation_icon"/>
+    <item
+        android:id="@+id/MainActivity_buttom_me"
+        android:title="من"
+        android:iconTint="@color/sefid"
+        android:icon="@drawable/me_logo"/>
+
+
+</menu>

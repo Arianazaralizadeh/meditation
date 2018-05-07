@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context="com.example.aria_nazaralizadeh.meditation.CompleteProfileActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_back_1"></RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Activity_complete_profole_profilePic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/img_profilepic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Activity_complete_profole_profilePic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="اضافه کردن عکس"
+                android:textColor="@color/sefid" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:background="@color/shishe"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/shishe"
+                            android:inputType="textPersonName"
+                            android:maxLines="1"
+                            android:textColor="@color/sefid" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="   نام  :"
+                            android:textColor="@color/sefid"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/shishe">
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/shishe"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:maxLines="1"
+                            android:textColor="@color/sefid"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="   سن  :"
+                            android:textColor="@color/sefid"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/shishe">
+
+                        <me.omidh.liquidradiobutton.LiquidRadioButton
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:text="زن"
+                            android:textColor="@color/sefid"
+                            app:lrb_checkedColor="@color/sefid"
+                            app:lrb_unCheckedColor="@color/sefid"
+                            android:contextClickable="true"/>
+
+
+                        <me.omidh.liquidradiobutton.LiquidRadioButton
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:checked="true"
+                            android:text="مرد"
+                            android:textColor="@color/sefid"
+                            app:lrb_checkedColor="@color/sefid"
+
+                            app:lrb_unCheckedColor="@color/sefid" />
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="  جنسیت  :"
+                            android:textColor="@color/sefid"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/Activity_complete_profole_button_start"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/blue"
+                        android:text="ورود به برنامه"
+                        android:textColor="@color/sefid" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

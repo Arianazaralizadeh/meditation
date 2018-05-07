@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e10000"
+    tools:context="com.example.aria_nazaralizadeh.meditation.mainactivity_mefragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/back"
+        app:tabTextColor="#ffffff"
+        android:layout_below="@id/action_bar"
+        app:tabSelectedTextColor="@color/blue"
+        app:tabIndicatorColor="@color/blue"
+        android:layerType="software"></android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pajer"
+        android:layout_above="@id/bottomNavigationView"
+        android:layout_below="@id/tab"
+        ></android.support.v4.view.ViewPager>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
